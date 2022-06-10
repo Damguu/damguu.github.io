@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Group 1, BSIT 3D</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team.css">
+</head>
+
+<body style="font-family: Rubik, sans-serif;">
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><i class="fa fa-american-sign-language-interpreting" style="margin-right: 10px;height: 20px;font-size: 22px;"></i><span style="font-family: Rubik, sans-serif;"><strong>Bobot</strong></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" style="border-color: var(--bs-blue);"><a class="nav-link active" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true" href="#" style="font-family: Rubik, sans-serif;margin: 0 2px;">Title</a></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;margin: 0 2px;"><a class="nav-link active" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true" href="#rationale" style="font-family: Rubik, sans-serif;margin: 0 2px;">Rationale</a></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;margin: 0 2px;"><a class="nav-link active" data-aos="zoom-in" data-aos-delay="300" data-aos-once="true" href="#objectives" style="font-family: Rubik, sans-serif;margin: 0 2px;">Objectives</a></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;margin: 0 2px;"><a class="nav-link active" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true" href="#db-architecture" style="font-family: Rubik, sans-serif;margin: 0 2px;">DB Architecture</a></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;margin: 0 2px;"><a class="nav-link active" data-aos="zoom-in" data-aos-delay="500" data-aos-once="true" href="#erd" style="font-family: Rubik, sans-serif;margin: 0 2px;">ERD</a></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;margin: 0 2px;"><a class="nav-link active" data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" href="#queries" style="font-family: Rubik, sans-serif;margin: 0 2px;">Queries</a></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;margin: 0 2px;"><a class="nav-link active" data-aos="zoom-in" data-aos-delay="700" data-aos-once="true" href="#sql-links" style="font-family: Rubik, sans-serif;margin: 0 2px;border-color: rgba(157,34,34,0.9);">Links</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section style="height: 85vh;background: #c487e0;padding: 0 5%;">
+        <div class="container" style="height: 100%;">
+            <div class="row justify-content-center" style="height: 100%;">
+                <div class="col col-5 d-flex align-items-center justify-content-center" style="padding: 0;">
+                    <div style="width: 300px;height: 300px;">
+                        <h1 data-aos="fade-down" style="color: rgb(255,255,255);font-size: 75px;height: 80px;font-family: Rubik, sans-serif;"><strong>Bobot</strong>:</h1>
+                        <p data-aos="fade-up" style="color: rgb(255,255,255);font-size: 20px;width: 338px;--bs-body-font-weight: 100;margin-bottom: 35px;font-family: Rubik, sans-serif;">An Interactive Filipino Sign Language App</p><button class="btn btn-primary pulse animated infinite" id="viewPrototype" type="button" style="background: #aed361;font-size: 16px;padding: 12px 20px;border-radius: 25px;border-style: none;font-family: Rubik, sans-serif;">View UI Prototype on Figma</button>
+                    </div>
+                </div>
+                <div class="col offset-lg-0 col-6 text-center"><img data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-aos-once="true" src="assets/img/bobot-phones.png" style="width: 450px;margin-top: 5%;"></div>
+            </div>
+        </div>
+    </section>
+    <section id="rationale" style="padding: 60px 0;">
+        <div class="container" style="padding: 0px 15%;">
+            <h1 data-aos="zoom-in" data-aos-once="true" style="text-align: center;margin-top: 0;margin-bottom: 40px;"><strong>Rationale</strong></h1>
+            <p data-aos="zoom-in-up" data-aos-once="true" style="margin-bottom: 20px;font-size: 18px;margin-top: 0;text-align: justify;line-height: 37px;color: var(--bs-gray-dark);"><span style="color: rgb(0, 0, 0); background-color: transparent;">&nbsp; &nbsp; &nbsp;The Filipino Sign Language (FSL) has been recognized as the national sign language with the recent passing of the Republic Act no. 11106 or The Filipino Sign Language Act,&nbsp; which declares The Filipino Sign Language As The National Sign Language Of The Filipino Deaf And The Official Sign Language Of Government In All Transactions Involving The Deaf, And Mandating Its Use In Schools, Broadcast Media, And Workplaces. One of the main concerns is that most Filipinos are unaware that the Philippines has an official sign language, and according to Lintag (2019, as cited in Guno, 2019) there is no specific mention nor implementation plan of FSL in the present K to 12 Department of Education Order.</span><br></p>
+            <p data-aos="zoom-in-up" data-aos-once="true" style="margin-bottom: 20px;font-size: 18px;margin-top: 40px;text-align: justify;line-height: 40px;/*font-family: Rubik, sans-serif;*/color: var(--bs-gray-dark);"><span style="color: rgb(0, 0, 0); background-color: transparent;">&nbsp; &nbsp; &nbsp;The system aims to address the deficiencies in awareness. It works when a user provides an email and password to sign up to the system, which is then stored to the database online. The main feature of the system is the quiz functionality which is tier-based and has progress lock, which means that the user cannot proceed unless they finish the current level that they are taking. All the user’s progress is saved and attached to their account, which they can also access on other devices when they login using their account. The FSL gestures are represented by images in the .gif and .png format which will then be stored in the database online. Information is retrieved when a quiz item is generated to the users when they are currently inside a question.</span><br></p>
+        </div>
+    </section>
+    <section id="objectives" style="padding: 60px 0;background: #f7f2f9;">
+        <div class="container" style="padding: 0 15%;">
+            <h1 data-aos="zoom-in" data-aos-once="true" style="text-align: center;margin-top: 0;margin-bottom: 40px;font-family: Rubik, sans-serif;"><strong>Objectives</strong></h1>
+            <p data-aos="zoom-in" data-aos-once="true" style="margin-bottom: 20px;font-size: 20px;margin-top: 0;text-align: center;--bs-body-font-weight: bold;color: var(--bs-gray-dark);font-family: Rubik, sans-serif;"><span style="color: rgb(0, 0, 0); background-color: transparent;">This study aimed to create a cross-platform Filipino Sign Language Quiz App with React-Native.</span><br></p>
+            <p data-aos="zoom-out" data-aos-once="true" style="margin-bottom: 55px;font-size: 20px;margin-top: 25px;text-align: center;--bs-body-font-weight: bold;font-family: Rubik, sans-serif;"><em><span style="color: rgb(0, 0, 0); background-color: transparent;">Specifically, this study is aimed to:</span></em><br></p>
+            <div class="row" style="margin: 0;margin-bottom: 15px;margin-top: 20px;">
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;"><strong>&nbsp;</strong><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">&nbsp; Allow users to Sign-up using their email and given password.</span><br></p>
+                </div>
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;">&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">&nbsp; Enable users to Log-in, and are validated.</span><br></p>
+                </div>
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;">&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">&nbsp;&nbsp;</span><span style="color: rgb(0, 0, 0); background-color: transparent;">Translate user-inputted words into .gif format.</span><br></p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin: 0;margin-bottom: 15px;">
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;">&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><span style="color: rgb(0, 0, 0);">&nbsp;Enable the system to render all the topics from the database.</span><br></p>
+                </div>
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;">&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">Display the&nbsp; progress of the user.</span><br></p>
+                </div>
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;"><strong>&nbsp;</strong><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">&nbsp;Store u</span><span style="color: rgb(0, 0, 0);">ser progress when they finish a topic.</span><br></p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin: 0;margin-bottom: 15px;">
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;"><strong>&nbsp;</strong><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><strong><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">&nbsp;</span></strong><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">Allow users to view lectures from certain topics.</span><br></p>
+                </div>
+                <div class="col col-4" style="text-align: center;">
+                    <p data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true" style="font-size: 18px;font-family: Rubik, sans-serif;--bs-body-font-weight: normal;"><strong>&nbsp;</strong><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" style="color: #c487e0;">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></span><strong><span style="color: rgb(0, 0, 0); background-color: rgba(233, 236, 239, 0);">&nbsp;</span></strong><span style="color: rgb(0, 0, 0);">Allow users to take quizzes from certain topics.</span><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="db-architecture" style="padding: 60px 0;">
+        <div class="container text-center" style="padding: 0px 15%;">
+            <h1 data-aos="zoom-in" style="text-align: center;margin-top: 0;margin-bottom: 40px;font-family: Rubik, sans-serif;"><strong>Database Architecture</strong></h1><img data-aos="fade-up" data-aos-duration="400" style="width: 100%;height: 500px;" src="assets/img/db-architecture.png">
+        </div>
+    </section>
+    <section id="erd" style="padding: 60px 0;background: #f7f2f9;">
+        <div class="container text-center" style="padding: 0px 15%;">
+            <h1 data-aos="zoom-in" style="text-align: center;margin-top: 0;margin-bottom: 40px;font-family: Rubik, sans-serif;"><strong>Entity Relationship Diagram</strong></h1><img data-aos="fade-up" data-aos-duration="400" style="width: 100%;height: 500px;" src="assets/img/Database%20Activity%202.png">
+        </div>
+    </section>
+    <section id="queries" style="padding: 60px 0;">
+        <div class="container text-center" style="padding: 0px 9%;">
+            <h1 data-aos="zoom-in" data-aos-once="true" style="text-align: center;margin-top: 0;margin-bottom: 40px;"><strong>Queries</strong></h1>
+            <div class="row" style="height: 500px;">
+                <div class="col">
+                    <h5 data-aos="fade" data-aos-delay="400" data-aos-once="true" style="margin-bottom: 15px;">SCHEMA</h5>
+                    <textarea data-aos="fade-up-right" data-aos-delay="200" data-aos-once="true" style="width: 100%;height: 100%;margin-bottom: 15px;padding: 20px;border-radius: 5px;resize: none;" placeholder="">
+/*CREATE TABLE */
+
+CREATE TABLE users (
+    userID varchar(4),
+    userEmail varchar(32),
+    userPassword varchar(24),
+    userFName varchar(15),
+    userLName varchar(15),
+    primary key (userID));
+
+CREATE TABLE wordbank (
+    wordID varchar(4),
+    wordImage varchar(32),
+    word varchar(32),
+    primary key (wordID));
+
+CREATE TABLE topic (
+    topicID varchar(4), 
+    topicName varchar(30),
+    difficulty varchar(10),
+    topicLogo varchar(30),
+    primary key (topicID));
+
+CREATE TABLE quiz (
+	quizID varchar(4), 
+	question varchar(64),
+	answer varchar(32),
+	choice1 varchar(16),
+	choice2 varchar(16),
+	choice3 varchar(16),
+	choice4 varchar(16),
+	primary key (quizID));
+
+CREATE TABLE lecture (
+    lectureID varchar(4), 
+    lectureText varchar(256),
+    primary key (lectureID)
+);
+  
+CREATE TABLE user_topic (
+    userTopicID int(2),
+    topicID varchar(4),
+    userID varchar(4),
+    primary key (userTopicID),
+    foreign key (topicID) references topic(topicID),
+    foreign key (userID) references users(userID),
+	UNIQUE(topicID, userID));
+    
+CREATE TABLE topic_lecture (
+    topicLectureID int(2),
+    topicID varchar(4),
+    lectureID varchar(4),
+    primary key (topicLectureID),
+    foreign key (topicID) references topic(topicID),
+    foreign key (lectureID) references lecture(lectureID));
+
+CREATE TABLE topic_quiz(
+    topicQuizID int(2),
+    topicID varchar(4),
+    quizID varchar(4),
+    primary key (topicQuizID),
+    foreign key (topicID) references topic(topicID),
+    foreign key (quizID) references quiz(quizID)
+);
+
+CREATE TABLE quiz_wordbank(
+    quizWordbankID int(2),
+    quizID varchar(4),
+    wordID varchar(4),
+    primary key (quizWordbankID),
+    foreign key (quizID) references quiz(quizID),
+    foreign key (wordID) references wordbank(wordID)
+);
+
+CREATE TABLE lecture_wordbank(
+    lectureWordbankID int(2),
+    lectureID varchar(4),
+    wordID varchar(4),
+    primary key (lectureWordbankID),
+    foreign key (lectureID) references lecture(lectureID),
+    foreign key (wordID) references wordbank(wordID)
+);
+
+
+# ------------ OBJECTIVE: SIGN UP FUNCTIONALITY
+
+INSERT INTO users
+VALUES ('u1', 'bobot@gmail.com', 'password123','Alagao','Enrico');
+
+INSERT INTO users
+VALUES ('u2', 'npcii@gmail.com', 'ccz85N4wJA4Q5DBZ','Dulla','Anthony');
+
+INSERT INTO users
+VALUES ('u3', 'lance.poblacion@gmail.com', '3w9yb5UwZxnXL6kQ','Poblacion','Lance');
+
+INSERT INTO users
+VALUES ('u4', 'danielreysoma@gmail.com', 'SSY25h3gVqgKxhGf','Reysoma','Daniel');
+
+INSERT INTO users
+VALUES ('u5', 'markvill@gmail.com', 'n9QsyqNgRxS3NTvU','Villaflor','Merique');
+
+
+
+# Add Data to Topic Table
+INSERT INTO topic
+VALUES ('t1', 'Introduksyon', 'Easy' , 'introduksyon.png');
+INSERT INTO topic
+VALUES ('t2', 'Alpabeto' ,  'Easy' , 'Alpabeto');
+INSERT INTO topic
+VALUES ('t3', 'Simpleng Salita' ,  'Easy' , 'SimplengSalita.png');
+INSERT INTO topic
+VALUES ('t4', 'Mga Hayop' ,  'Medium' , 'Mgahayop.png');
+INSERT INTO topic
+VALUES ('t5', 'Mga Lugar' ,  'Medium' , 'MgaLugar.png');
+INSERT INTO topic
+VALUES ('t6', 'Pandiwa' ,  'Hard' , 'Pandiwa.png');
+INSERT INTO topic
+VALUES ('t7', 'Social Media' ,  'Hard' , 'SocialMedia.png');
+
+
+
+# Add Data to Wordbank Table 
+
+INSERT INTO wordbank VALUES ('w1', 'hello.png', 'hello');
+INSERT INTO wordbank VALUES ('w2', 'hi.png', 'hi');
+INSERT INTO wordbank VALUES ('w3', 'house.png', 'house');
+INSERT INTO wordbank VALUES ('w4', 'I-love-you.png', 'I love you');
+INSERT INTO wordbank VALUES ('w5', 'love.png', 'love');
+INSERT INTO wordbank VALUES ('w6', 'no.png', 'no');
+INSERT INTO wordbank VALUES ('w7', 'sorry.png', 'sorry');
+INSERT INTO wordbank VALUES ('w8', 'school.png', 'school');
+INSERT INTO wordbank VALUES ('w9', 'thank-you.png', 'thank you');
+INSERT INTO wordbank VALUES ('w10', 'yes.png', 'yes'); 
+INSERT INTO wordbank VALUES ('w11', 'a-fs.png', 'a');
+INSERT INTO wordbank VALUES ('w12', 'b-fs.png', 'b');
+INSERT INTO wordbank VALUES ('w13', 'c-fs.png', 'c');
+
+
+# Add Data to Quiz Table 
+INSERT INTO quiz VALUES ('q1', 'question: Ano ang ibig sabihin nito?', 'choiceX', 'choice1','choice2', 'choice3','choice4');
+
+INSERT INTO quiz VALUES ('q2', 'question: Ano sa Filipino ang Lorep Ipsum?', 'choiceX', 'choice1','choice2', 'choice3','choice4');
+
+INSERT INTO quiz VALUES ('q3', 'question: Ano ibig sabihin ng Fingerspell na ito?', 'choiceX', 'choice1','choice2', 'choice3','choice4');
+
+INSERT INTO quiz VALUES ('q4', 'question: Bakit kailangan i implement yung FSL?', 'choiceX', 'choice1','choice2', 'choice3','choice4');
+
+INSERT INTO quiz VALUES ('q5', 'question: Ano ibig sabihin nito?', 'choiceX', 'choice1','choice2', 'choice3','choice4');
+
+# Add Data to Lecture Table:
+INSERT INTO lecture
+VALUES ('l1', 'The republic act blablabla or RA 123 is a law');
+
+INSERT INTO lecture
+VALUES ('l2', 'The Fundamentals of Sign Language are dotdotdot');
+
+INSERT INTO lecture
+VALUES ('l3', 'The alphabets of FSL');
+
+INSERT INTO lecture
+VALUES ('l4', 'Expression is often used in sign language');
+
+INSERT INTO lecture
+VALUES ('l5', 'The FSL is a sign language originating from the philippines with its own grammar and syntax');
+
+
+
+#---------- OBJECTIVE: STORE USER PROGRESS WITH USER_TOPIC TABLE
+# topicID and userID combination must be unique
+INSERT INTO user_topic VALUES (1,'t1','u1');
+INSERT INTO user_topic VALUES (2,'t2','u1');
+INSERT INTO user_topic VALUES (3,'t3','u1');
+INSERT INTO user_topic VALUES (4,'t1','u2');
+INSERT INTO user_topic VALUES (5,'t2','u2');
+INSERT INTO user_topic VALUES (6,'t1','u3');
+INSERT INTO user_topic VALUES (7,'t1','u4');
+INSERT INTO user_topic VALUES (8,'t2','u4');
+INSERT INTO user_topic VALUES (9,'t1','u5');
+
+# ASSIGN LESSONS TO THEIR TOPICS
+INSERT INTO topic_lecture VALUES (1,'t1','l1');
+INSERT INTO topic_lecture VALUES (2,'t1','l2');
+INSERT INTO topic_lecture VALUES (3,'t2','l3');
+INSERT INTO topic_lecture VALUES (4,'t3','l4');
+INSERT INTO topic_lecture VALUES (5,'t4','l5');
+
+# ASSIGN QUIZ TO TOPICS
+INSERT INTO topic_quiz VALUES (1,'t1','q1');
+INSERT INTO topic_quiz VALUES (2,'t1','q2');
+INSERT INTO topic_quiz VALUES (3,'t2','q3');
+INSERT INTO topic_quiz VALUES (4,'t3','q4');
+INSERT INTO topic_quiz VALUES (5,'t4','q5');
+
+# ASSIGN IMAGES TO A QUIZ IF IT CONTAINS IT
+INSERT INTO quiz_wordbank VALUES (1,'q1','w1');
+INSERT INTO quiz_wordbank VALUES (2,'q3','w6');
+INSERT INTO quiz_wordbank VALUES (3,'q3','w9');
+INSERT INTO quiz_wordbank VALUES (4,'q5','w8');
+
+# ASSIGN IMAGES TO A LECTURE IF IT CONTAINS IT
+INSERT INTO lecture_wordbank VALUES (1,'l2','w1');
+INSERT INTO lecture_wordbank VALUES (2,'l2','w9');
+INSERT INTO lecture_wordbank VALUES (3,'l2','w6');
+INSERT INTO lecture_wordbank VALUES (4,'l2','w10');
+INSERT INTO lecture_wordbank VALUES (5,'l3','w11');
+INSERT INTO lecture_wordbank VALUES (6,'l3','w12');
+INSERT INTO lecture_wordbank VALUES (7,'l3','w13');
+
+
+                    </textarea>
+                </div>
+                <div class="col">
+                    <h5 data-aos="fade" data-aos-delay="400" data-aos-once="true" style="margin-bottom: 15px;">QUERY</h5>
+                    <textarea data-aos="fade-up-left" data-aos-delay="200" data-aos-once="true" style="width: 100%;height: 100%;border-radius: 5px;padding: 20px;resize: none;">
+#-----OBJECTIVE: TRANSLATE WORDS TO GIF---
+
+SELECT wordImage, word 
+FROM wordbank
+WHERE word = "i love you";
+
+
+#-----OBJECTIVE: LOG-IN FUNCTIONALITY-----
+
+SELECT * FROM users
+WHERE userEmail = 'bobot@gmail.com' 
+AND userPassword = 'password123';
+
+
+#-----OBJECTIVE: DISPLAY USER PROGRESS OF USER ID 1
+
+SELECT userTopicID, users.userID, users.userLName, topic.topicID, topic.topicName 
+FROM user_topic, users, topic
+WHERE users.userID = 'u1' 
+AND user_topic.userID = users.userID
+AND user_topic.topicID = topic.topicID;
+
+
+#-----OBJECTIVE: DISPLAY ALL THE LECTURES FROM TOPIC 1
+# Each of the topics has one or more lectures
+
+SELECT topicLectureID, topic.topicID, topic.topicName,
+lecture.lectureID, lecture.lectureText
+FROM topic_lecture, topic, lecture
+WHERE topic_lecture.topicID = topic.topicID
+AND topic_lecture.lectureID = lecture.lectureID;
+
+
+#-----OBJECTIVE: DISPLAY ALL THE QUIZ FROM TOPIC 1---
+# Each of the topics has one or more quizzes
+
+SELECT topicQuizID, topic.topicID, topic.topicName,
+quiz.quizID, quiz.question
+FROM topic_quiz, topic, quiz
+WHERE topic_quiz.topicID = topic.topicID
+AND topic_quiz.quizID = quiz.quizID;
+
+
+#-----OBJECTIVE: RETRIEVE A CORRESPONDING IMAGE FOR A QUESTION--
+# A Question may or may not have any images, and a certain question may have more than one image
+
+SELECT quizWordbankID, quiz.quizID, quiz.question,
+wordbank.wordID,wordbank.wordImage
+FROM quiz_wordbank, quiz, wordbank
+WHERE quiz_wordbank.wordID = wordbank.wordID
+AND quiz_wordbank.quizID = quiz.quizID;
+
+
+#-----OBJECTIVE: RETRIEVE A CORRESPONDING IMAGE FOR A LECTURE---
+# A Lecture ID may or may not have any images, and a certain lecture may have more than one image
+
+SELECT lectureWordbankID, lecture.lectureID, lecture.lectureText,
+wordbank.wordID,wordbank.wordImage
+FROM lecture_wordbank, lecture, wordbank
+WHERE lecture_wordbank.wordID = wordbank.wordID
+AND lecture_wordbank.lectureID = lecture.lectureID;
+
+
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sql-links" style="padding: 60px 0;background: #f7f2f9;">
+        <div class="container text-center" style="padding: 0px 15%;">
+            <h1 data-aos="zoom-in" data-aos-once="true" style="text-align: center;margin-bottom: 40px;font-family: Rubik, sans-serif;"><strong>Links</strong></h1>
+            <div class="row">
+                <div class="col" style="font-family: Rubik, sans-serif;">
+                    <h4 data-aos="fade-down" data-aos-delay="250" data-aos-once="true" style="font-family: Rubik, sans-serif;">Db-Fiddle</h4><button class="btn btn-primary" data-aos="fade-up" data-aos-once="true" type="button" style="width: 200px;background: #c487e0;margin-top: 10px;font-family: Rubik, sans-serif;height: 50px;">Link</button>
+                </div>
+                <div class="col">
+                    <h4 data-aos="fade-down" data-aos-delay="250" data-aos-once="true" style="font-family: Rubik, sans-serif;">SQL Fiddle</h4><button class="btn btn-primary" data-aos="fade-up" data-aos-once="true" type="button" style="width: 200px;background: rgb(196,135,224);margin-top: 10px;height: 50px;">Link</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 70px 0;background: var(--bs-white);">
+        <div class="container text-center" style="padding: 0px 10%;">
+            <h1 data-aos="fade-up" style="text-align: center;margin-bottom: 60px;font-family: Rubik, sans-serif;">Team<span data-aos="fade-up" style="color: #c487e0;">&nbsp;"<strong>MEDAL</strong>"</span></h1>
+            <div class="row">
+                <div class="col col-4" style="font-family: Rubik, sans-serif;"><img data-aos="zoom-in" data-aos-delay="100" style="height: 100px;width: 100px;border-radius: 50%;" src="assets/img/merique.jpg">
+                    <h4 data-aos="fade-up" data-aos-delay="150" style="margin-top: 15px;margin-bottom: 0;"><span data-aos="fade-up" data-aos-delay="150" style="color: #c487e0;"><strong>M</strong></span>erique</h4>
+                    <h6 data-aos="fade-up" data-aos-delay="150" style="margin-top: 0px;"><em><span style="color: rgba(33, 37, 41, 0.5);">Villaflor</span></em></h6>
+                </div>
+                <div class="col col-4"><img data-aos="zoom-in" data-aos-delay="200" style="height: 100px;width: 100px;border-radius: 50%;" src="assets/img/enrico.jpg">
+                    <h4 data-aos="fade-up" data-aos-delay="250" style="margin-top: 15px;margin-bottom: 0;"><span data-aos="fade-up" data-aos-delay="250" style="color: #c487e0;"><strong>E</strong></span>nrico</h4>
+                    <h6 data-aos="fade-up" data-aos-delay="250" style="margin-top: 0px;font-family: Rubik, sans-serif;"><em><span style="color: rgba(33, 37, 41, 0.5);">Alagao</span></em></h6>
+                </div>
+                <div class="col col-4"><img data-aos="zoom-in" data-aos-delay="300" style="height: 100px;width: 100px;border-radius: 50%;" src="assets/img/Reysoma,%20Daniel%20A_0164.jpg">
+                    <h4 data-aos="fade-up" data-aos-delay="350" style="margin-top: 15px;margin-bottom: 0;"><span data-aos="fade-up" data-aos-delay="350" style="color: #c487e0;"><strong>D</strong></span>aniel</h4>
+                    <h6 data-aos="fade-up" data-aos-delay="350" style="margin-top: 0px;font-family: Rubik, sans-serif;"><em><span style="color: rgba(33, 37, 41, 0.5);">Reysoma</span></em></h6>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-4" style="font-family: Rubik, sans-serif;"><img data-aos="zoom-in" data-aos-delay="400" style="height: 100px;width: 100px;border-radius: 50%;" src="assets/img/anthony.jpg">
+                    <h4 data-aos="fade-up" data-aos-delay="450" style="margin-top: 15px;margin-bottom: 0;"><span data-aos="fade-up" data-aos-delay="450" style="color: #c487e0;"><strong>A</strong></span>nthony</h4>
+                    <h6 data-aos="fade-up" data-aos-delay="450" style="margin-top: 0px;"><em><span style="color: rgba(33, 37, 41, 0.5);">Dulla Jr.</span></em></h6>
+                </div>
+                <div class="col col-4"><img data-aos="zoom-in" data-aos-delay="500" style="height: 100px;width: 100px;border-radius: 50%;" src="assets/img/56917866_1158018654357565_951042171790688256_n.jpg">
+                    <h4 data-aos="fade-up" data-aos-delay="550" style="margin-top: 15px;margin-bottom: 0;"><span data-aos="fade-up" data-aos-delay="550" style="color: #c487e0;"><strong>L</strong></span>ance</h4>
+                    <h6 data-aos="fade-up" data-aos-delay="550" style="margin-top: 0px;font-family: Rubik, sans-serif;"><em><span style="color: rgba(33, 37, 41, 0.5);">Poblacion</span></em></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center" style="background: #c487e0;">
+        <div class="container text-muted py-4 py-lg-5">
+            <p class="mb-0" style="color: rgb(255,255,255);font-family: Rubik, sans-serif;font-size: 23px;">GROUP 1, BSIT 3D</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
